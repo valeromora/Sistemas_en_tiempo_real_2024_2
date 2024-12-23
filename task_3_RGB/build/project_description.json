@@ -1180,7 +1180,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Users/DELL/sr_codes/task_3_RGB/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/DELL/sr_codes/task_3_RGB/main/main.c" ],
+            "sources": [ "C:/Users/DELL/sr_codes/task_3_RGB/main/library_ledc.c", "C:/Users/DELL/sr_codes/task_3_RGB/main/main.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
