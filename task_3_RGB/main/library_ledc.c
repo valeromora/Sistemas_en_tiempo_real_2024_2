@@ -1,5 +1,6 @@
 #include "library_ledc.h"
 
+
 void init_rgb(led_rgb_struct *recived_rgb_struct, uint32_t gpio_red_led, uint32_t gpio_green_led, uint32_t gpio_blue_led, led_logic recived_led_logic) {
     ledc_timer_config_t ledc_timer = {
         .speed_mode = LEDC_MODE,   // Modo de alta velocidad
@@ -18,13 +19,13 @@ void init_rgb(led_rgb_struct *recived_rgb_struct, uint32_t gpio_red_led, uint32_
 
     led_struct green_led;
     green_led.gpio_num = gpio_green_led;
-    green_led.channel = 0;
+    green_led.channel = 1;
     green_led.duty = DEFAULT_DUTY;
     green_led.logic_led =  recived_led_logic;
 
     led_struct blue_led;
     blue_led.gpio_num = gpio_blue_led;
-    blue_led.channel = 0;
+    blue_led.channel = 2;
     blue_led.duty = DEFAULT_DUTY;
     blue_led.logic_led =  recived_led_logic;
 
@@ -43,12 +44,6 @@ void init_rgb(led_rgb_struct *recived_rgb_struct, uint32_t gpio_red_led, uint32_
         .duty           =recived_rgb_struct->red_led->duty, // Set duty to 0%
         .hpoint         = 0
     };
-    ESP_ERROR_CHECK(ledc_channel_config(&ledc_channel));
-
-    //red led config
-    ledc_channel.channel =recived_rgb_struct->red_led->channel;
-    ledc_channel.gpio_num =recived_rgb_struct->red_led->gpio_num;
-    ledc_channel.duty =recived_rgb_struct->red_led->duty;
     ESP_ERROR_CHECK(ledc_channel_config(&ledc_channel));
 
     //green led config

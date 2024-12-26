@@ -11,7 +11,7 @@
 
 void app_main(void)
 {
-led_rgb_struct my_led_rgb;
-init_rgb( &my_led_rgb , RED_PIN , GREEN_PIN , BLUE_PIN, COMMON_ANODE);
-Change_RGB_LED_DUTY(&my_led_rgb, 0, 100, 100);
+    led_rgb_struct my_led_rgb;
+    init_rgb( &my_led_rgb , RED_PIN , GREEN_PIN , BLUE_PIN, COMMON_CATHODE);
+    Change_RGB_LED_DUTY(&my_led_rgb, 0, 100, 0);
 }
