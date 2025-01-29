@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/DELL/Desktop/esp-idf/v5.3.1/esp-idf/components/bootloader/subproject
+# Install script for directory: C:/Users/DELL/Desktop/esp-idf/components/bootloader/subproject
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

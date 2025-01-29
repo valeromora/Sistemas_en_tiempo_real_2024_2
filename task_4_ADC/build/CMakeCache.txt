@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//No help, variable specified on the command line.
+CCACHE_ENABLE:UNINITIALIZED=1
+
+//Path to a program.
+CCACHE_FOUND:FILEPATH=C:/Users/DELL/.espressif/tools/ccache/4.8/ccache-4.8-windows-x86_64/ccache.exe
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=C:/Users/DELL/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-addr2line.exe
 
@@ -284,7 +290,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_STRIP:FILEPATH=C:/Users/DELL/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-strip.exe
 
 //The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=C:/Users/DELL/Desktop/esp-idf/v5.3.1/esp-idf/tools/cmake/toolchain-esp32.cmake
+CMAKE_TOOLCHAIN_FILE:FILEPATH=C:/Users/DELL/Desktop/esp-idf/tools/cmake/toolchain-esp32.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -308,7 +314,7 @@ ESP_PLATFORM:UNINITIALIZED=1
 GEN_FILES:BOOL=
 
 //Git command line client
-GIT_EXECUTABLE:FILEPATH=C:/Users/DELL/.espressif/tools/idf-git/2.39.2/cmd/git.exe
+GIT_EXECUTABLE:FILEPATH=C:/Program Files/Git/cmd/git.exe
 
 //IDF Build Target
 IDF_TARGET:STRING=esp32
@@ -341,13 +347,13 @@ Mbed TLS_BINARY_DIR:STATIC=C:/Users/DELL/sr_codes/task_4_ADC/build/esp-idf/mbedt
 Mbed TLS_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-Mbed TLS_SOURCE_DIR:STATIC=C:/Users/DELL/Desktop/esp-idf/v5.3.1/esp-idf/components/mbedtls/mbedtls
+Mbed TLS_SOURCE_DIR:STATIC=C:/Users/DELL/Desktop/esp-idf/components/mbedtls/mbedtls
+
+//No help, variable specified on the command line.
+PYTHON:UNINITIALIZED=C:\Users\DELL\.espressif\python_env\idf5.3_py3.8_env\Scripts\python.exe
 
 //No help, variable specified on the command line.
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
-
-//No help, variable specified on the command line.
-SDKCONFIG:UNINITIALIZED=c:\Users\DELL\sr_codes\task_4_ADC\sdkconfig
 
 //Allow unsafe builds. These builds ARE NOT SECURE.
 UNSAFE_BUILD:BOOL=OFF
@@ -365,7 +371,7 @@ esp-idf_BINARY_DIR:STATIC=C:/Users/DELL/sr_codes/task_4_ADC/build/esp-idf
 esp-idf_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-esp-idf_SOURCE_DIR:STATIC=C:/Users/DELL/Desktop/esp-idf/v5.3.1/esp-idf
+esp-idf_SOURCE_DIR:STATIC=C:/Users/DELL/Desktop/esp-idf
 
 //Dependencies for the target
 everest_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_xtensa;
@@ -583,17 +589,17 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
 C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS:INTERNAL=1
 //Details about finding Git
-FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[C:/Users/DELL/.espressif/tools/idf-git/2.39.2/cmd/git.exe][v2.39.2.windows.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[C:/Program Files/Git/cmd/git.exe][v2.30.0.windows.2()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[C:/Users/DELL/.espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe][cfound components: Interpreter ][v3.11.2()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[C:/Users/DELL/.espressif/python_env/idf5.3_py3.8_env/Scripts/python.exe][cfound components: Interpreter ][v3.8.7()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/task_4_ADC
-_Python3_EXECUTABLE:INTERNAL=C:/Users/DELL/.espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe
+_Python3_EXECUTABLE:INTERNAL=C:/Users/DELL/.espressif/python_env/idf5.3_py3.8_env/Scripts/python.exe
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;11;2;32;;;C:\Users\DELL\.espressif\tools\idf-python\3.11.2\Lib;C:\Users\DELL\.espressif\tools\idf-python\3.11.2\Lib;C:\Users\DELL\.espressif\python_env\idf5.3_py3.11_env\Lib\site-packages;C:\Users\DELL\.espressif\python_env\idf5.3_py3.11_env\Lib\site-packages
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=a554e8f38e0a4234ce61df897ab7741d
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;8;7;32;;;C:\Users\DELL\.espressif\tools\idf-python\3.8.7\Lib;C:\Users\DELL\.espressif\tools\idf-python\3.8.7\Lib;C:\Users\DELL\.espressif\python_env\idf5.3_py3.8_env\Lib\site-packages;C:\Users\DELL\.espressif\python_env\idf5.3_py3.8_env\Lib\site-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=d312a782ed48ad1ffd36a497b2422662
 

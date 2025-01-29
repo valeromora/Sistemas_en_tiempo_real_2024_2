@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/DELL/Desktop/esp-idf/v5.3.1/esp-idf/components/esp_system/port/soc/esp32
+# Install script for directory: C:/Users/DELL/Desktop/esp-idf/components/esp_system/port/soc/esp32
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

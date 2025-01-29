@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/DELL/Desktop/esp-idf/v5.3.1/esp-idf/components/esp-tls
+# Install script for directory: C:/Users/DELL/Desktop/esp-idf/components/esp-tls
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

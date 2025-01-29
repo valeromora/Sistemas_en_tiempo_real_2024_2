@@ -4,7 +4,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "C:/Users/DELL/Desktop/esp-idf/v5.3.1/esp-idf/components/bootloader/subproject"
+  "C:/Users/DELL/Desktop/esp-idf/components/bootloader/subproject"
   "C:/Users/DELL/sr_codes/task_4_ADC/build/bootloader"
   "C:/Users/DELL/sr_codes/task_4_ADC/build/bootloader-prefix"
   "C:/Users/DELL/sr_codes/task_4_ADC/build/bootloader-prefix/tmp"
